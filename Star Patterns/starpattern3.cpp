@@ -4,15 +4,16 @@ using namespace std;
 /*
 output ----------
 
-321
-321
-321
+123
+456
+789
 
  */
 
 int main()
 {
     int number;
+    int count = 1;
     cout << "Enter the number : ";
     cin >> number;
 
@@ -22,8 +23,9 @@ int main()
         int col = 1;
         while (col <= number)
         {
-            cout << number-col+1;
+            cout << count;
             col++;
+            count++;
         }
         cout << endl;
         row++;

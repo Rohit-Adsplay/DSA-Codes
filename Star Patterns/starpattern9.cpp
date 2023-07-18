@@ -4,9 +4,9 @@ using namespace std;
 /*
 output ----------
 
-321
-321
-321
+ABC
+DEF
+GHI
 
  */
 
@@ -15,6 +15,7 @@ int main()
     int number;
     cout << "Enter the number : ";
     cin >> number;
+    int count = 0;
 
     int row = 1;
     while (row <= number)
@@ -22,7 +23,9 @@ int main()
         int col = 1;
         while (col <= number)
         {
-            cout << number-col+1;
+            char ch = 'A'+count;
+            cout << ch;
+            count++;
             col++;
         }
         cout << endl;

@@ -4,9 +4,10 @@ using namespace std;
 /*
 output ----------
 
-321
-321
-321
+D
+CD
+BCD
+ABCD
 
  */
 
@@ -20,9 +21,12 @@ int main()
     while (row <= number)
     {
         int col = 1;
-        while (col <= number)
+         char ch = 'A' + number-row;
+        while (col <= row)
         {
-            cout << number-col+1;
+           
+            cout << ch;
+            ch++;
             col++;
         }
         cout << endl;

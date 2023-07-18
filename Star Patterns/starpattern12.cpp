@@ -4,38 +4,32 @@ using namespace std;
 /*
 output ----------
 
- ****
-  ***
-   **
-    *
+C
+BB
+AAA
 
  */
 
-int main() {
-    int n;
-    cin>>n;
-    
+int main()
+{
+    int number;
+    cout << "Enter the number : ";
+    cin >> number;
+
     int row = 1;
-    
-    while(row<=n){
-        int space = row - 1;
-        while (space)
-        {
-            cout << " ";
-            space = space - 1;
-        }
-
+    while (row <= number)
+    {
         int col = 1;
-        while (col <= n-row+1)
+        while (col <= row)
         {
-            cout << "*";
+            char ch = 'A' + number - row;
+            cout << ch;
             col++;
+            ch++;
         }
-
         cout << endl;
         row++;
     }
-    
 
     return 0;
 }

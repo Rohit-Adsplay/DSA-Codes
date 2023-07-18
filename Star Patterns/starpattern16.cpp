@@ -4,9 +4,10 @@ using namespace std;
 /*
 output ----------
 
-321
-321
-321
+   *
+  **
+ ***
+****
 
  */
 
@@ -20,9 +21,16 @@ int main()
     while (row <= number)
     {
         int col = 1;
-        while (col <= number)
+        int space = number - row;
+        while (space)
         {
-            cout << number-col+1;
+            cout << " ";
+            space--;
+        }
+
+        while (col <= row)
+        {
+            cout << "*";
             col++;
         }
         cout << endl;

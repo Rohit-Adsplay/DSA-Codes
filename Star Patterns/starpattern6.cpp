@@ -4,8 +4,8 @@ using namespace std;
 /*
 output ----------
 
-321
-321
+1
+21
 321
 
  */
@@ -20,9 +20,9 @@ int main()
     while (row <= number)
     {
         int col = 1;
-        while (col <= number)
+        while (col <= row)
         {
-            cout << number-col+1;
+            cout << row-col+1;
             col++;
         }
         cout << endl;

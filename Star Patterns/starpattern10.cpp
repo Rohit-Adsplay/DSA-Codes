@@ -4,9 +4,9 @@ using namespace std;
 /*
 output ----------
 
-321
-321
-321
+ABC
+BCD
+CDE
 
  */
 
@@ -22,7 +22,8 @@ int main()
         int col = 1;
         while (col <= number)
         {
-            cout << number-col+1;
+            char ch = 'A'+row+col-2;
+            cout << ch;
             col++;
         }
         cout << endl;
