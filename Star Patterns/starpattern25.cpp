@@ -20,7 +20,7 @@ int main()
     int row = 1;
 
     while (row <= n)
-    {
+    { 
         int colStart = 1;
         while (colStart <= n - row + 1)
         {
