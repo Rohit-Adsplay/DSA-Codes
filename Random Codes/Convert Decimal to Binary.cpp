@@ -8,7 +8,7 @@ int main()
     int n;
     int ans = 0;
     int i = 0;
-
+    cout << "Enter a Decimal number : ";
     cin >> n;
 
     while (n != 0)
@@ -18,7 +18,7 @@ int main()
         n = n >> 1;                     // Right Shift
         i++;
     }
-    cout<<"Decimal : "<<n<<" to Binary is : "<<ans;
+    cout << "Decimal : " << n << " to Binary is : " << ans;
 
     return 0;
 }
