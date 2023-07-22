@@ -13,7 +13,7 @@ int main()
 
     while (n != 0)
     {
-        int bit = n & 1;               // Used to get the last bit
+        int bit = n & 1;                // Used to get the last bit
         ans = (bit * pow(10, i)) + ans; // Formula to Reverese the bit storing
         n = n >> 1;                     // Right Shift
         i++;
