@@ -15,6 +15,7 @@ void searchElement(int arr[], int size, int elementToSearch)
     cout << "Element Not Found in Array";
 }
 
+
 int main()
 {
     int elementToSearch;
