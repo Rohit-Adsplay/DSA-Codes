@@ -6,14 +6,14 @@ void searchElementWithBinarySearch(int arr[], int size, int elementToSearch)
 {
     int start = 0;
     int end = size - 1;
-    int mid = start + end / 2;
-    
+    int mid = start + (end - start) / 2; // to prevent it from getting out of Integer Range i.e. (2^31-1)
+
     while (start <= end)
     {
 
         if (arr[mid] == elementToSearch)
         {
-            cout << "Element Position is : " << mid;
+            cout << "Element " << elementToSearch << "'s Position is : " << mid;
             return;
         }
 
@@ -25,7 +25,7 @@ void searchElementWithBinarySearch(int arr[], int size, int elementToSearch)
         {
             end = mid - 1;
         }
-        mid = start + end / 2;
+        mid = start + (end - start) / 2;
     }
 
     cout << "Element Not Found in Array";
