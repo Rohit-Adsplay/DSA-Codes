@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void searchHighestElement(int arr[], int size)
+void searchPivotIndex(int arr[], int size)
 {
     int start = 0;
     int end = size - 1;
@@ -11,7 +11,7 @@ void searchHighestElement(int arr[], int size)
     while (start < end)
     {
 
-        if (arr[mid] < arr[mid + 1])
+        if (arr[mid] >= arr[0])
         {
             start = mid + 1;
         }else{
@@ -21,15 +21,15 @@ void searchHighestElement(int arr[], int size)
         mid = start + (end - start) / 2;
     }
 
-    cout << "Highest Value in Array is " << arr[start] << " At index Position : " << start;
+    cout <<"Pivot At index Position : " << start;
 }
 
 int main()
 {
 
-    int num[10] = {2, 4, 6, 7, 8, 12, 5, 1, -123, -325};
+    int num[7] = {7, 8, 12, 1, 3, 5, 6};
 
-    searchHighestElement(num, sizeof(num) / sizeof(int));
+    searchPivotIndex(num, sizeof(num) / sizeof(int));
 
     return 0;
 }
