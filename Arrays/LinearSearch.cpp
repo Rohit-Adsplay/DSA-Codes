@@ -4,11 +4,13 @@ using namespace std;
 
 void searchElement(int arr[], int size, int elementToSearch)
 {
+
     for (int i = 0; i < size; i++)
     {
         if (arr[i] == elementToSearch)
         {
             cout << "Found at Index Position : " << i;
+            break;
         }
     }
 

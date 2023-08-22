@@ -10,7 +10,6 @@ void searchElementWithBinarySearch(int arr[], int size, int elementToSearch)
 
     while (start <= end)
     {
-
         if (arr[mid] == elementToSearch)
         {
             cout << "Element " << elementToSearch << "'s Position is : " << mid;
@@ -37,7 +36,7 @@ int main()
     cout << "Enter the element you want to Search : ";
     cin >> elementToSearch;
 
-    int num[10] = {2, 4, 6, 7, 8, 12, 2, 4, -123, -325};
+    int num[6] = {2, 4, 6, 7, 8, 12};
 
     searchElementWithBinarySearch(num, sizeof(num) / sizeof(int), elementToSearch);
 
