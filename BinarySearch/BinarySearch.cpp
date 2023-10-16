@@ -3,9 +3,9 @@
 using namespace std;
 
 void searchElementWithBinarySearch(int arr[], int size, int elementToSearch)
-{
+   {
     int start = 0;
-    int end = size - 1;
+    int end = size - 1; 
     int mid = start + (end - start) / 2; // to prevent it from getting out of Integer Range i.e. (2^31-1)
 
     while (start <= end)
